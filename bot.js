@@ -44,23 +44,7 @@ client.on('message', message => {
     }
 });
 
-client2.on('message', message => {
-    if(message.content === 'راتب'){
-        message.channel.send('#daily')
-    }
-});
 
-client2.on('message', message => {
-    if(message.content === 'مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === 'ريب'){
-        message.channel.send('#credits')
-    }
-});
 
 
 
@@ -78,7 +62,7 @@ if (message.content === '!spam') {
       }
 });
 
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
