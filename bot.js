@@ -52,6 +52,27 @@ client.on('message', message => {
 });
 
 
+ client.on("ready", () => {
+	 
+	 
+console.log('Code');
+client.user.setPresence({
+  status: 'dnd',
+  game: { 
+     type: 0,
+     name: 'Programmer & Coder',
+     details: `! , Mr . DaHoM`,
+     url: 'http://twitch.tv/M3roof',
+     state: `Simo Network`,
+    application_id: '525571560229306370',
+     assets: {
+        large_image: `525571560229306370`,
+        large_text: `DaHoM` }
+
+  }
+    });
+});  }
+
 
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
